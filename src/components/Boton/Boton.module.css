@@ -1,0 +1,27 @@
+.boton {
+    border: 2px solid var(--primario);
+    border-radius: 8px;
+    padding: 0.4rem 0.9rem;
+    cursor: pointer;
+}
+
+.primario {
+    background: var(--primario);
+    color: var(--superficie);
+}
+
+.secundario {
+    background: transparent;
+    color: var(--primario);
+}
+
+.activo {
+    box-shadow: 0 0 0 3px var(--alerta);
+}
+
+.horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
