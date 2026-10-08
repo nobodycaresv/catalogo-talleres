@@ -1,0 +1,38 @@
+.tarjeta {
+    background: var(--superficie);
+    color: var(--texto);
+    border: 2px solid transparent;
+    border-radius: 12px;
+    padding: 1rem;
+    position: relative;
+}
+
+.pocos { border-color: var(--alerta); }
+.completo { opacity: 0.55; }
+
+.etiqueta {
+    background: var(--primario);
+    color: var(--superficie);
+    border-radius: 6px;
+    padding: 0.1rem 0.5rem;
+    font-size: 0.8rem;
+}
+
+.barra {
+    background: var(--fondo);
+    border-radius: 6px;
+    height: 8px;
+    overflow: hidden;
+    margin: 0.5rem 0;
+}
+
+.relleno {
+    background: var(--exito);
+    height: 100%;
+}
+
+/* va al final para ganarle a .pocos (misma especificidad, gana el último) */
+.expandida {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    border-color: var(--primario);
+}
